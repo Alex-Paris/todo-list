@@ -8,12 +8,51 @@
   justify-content: space-between;
 }
 
+.header>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem
+}
+
 .header h5 {
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--blue);
 }
 
+.header span {
+  border-radius: 999px;
+  background: var(--gray-400);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--gray-200);
+  padding: 2px 8px;
+  line-height: normal;
+}
+
 .header .doneTasks {
   color: var(--purple);
 }
+
+.todos>div {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.emptyList {
+  padding: 4rem 1.5rem;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+  gap: 1rem;
+  color: var(--gray-300);
+}
+
+.emptyList img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.filledList {}
