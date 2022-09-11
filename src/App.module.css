@@ -1,0 +1,14 @@
+.app {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.app main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+  max-width: var(--max-width);
+  margin-top: 5.75rem;
+}

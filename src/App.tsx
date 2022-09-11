@@ -1,17 +1,18 @@
-import { useState } from 'react'
+import { Header } from './components/Header'
+import { TodoList } from './components/TodoList'
 
 import styles from "./App.module.css"
 
 import './global.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div className={styles.app}>
+      <Header />
+
+      <main>
+        <TodoList />
+      </main>
     </div>
   )
 }
-
-export default App
