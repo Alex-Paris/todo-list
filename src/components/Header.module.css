@@ -16,6 +16,7 @@
   position: absolute;
   width: 100%;
   max-width: var(--max-width);
+  padding: var(--main-padding);
   margin-top: 12.5rem;
   display: flex;
   gap: 0.5rem;

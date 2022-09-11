@@ -7,13 +7,18 @@ import logoImg from '../assets/logo.svg'
 import plusImg from '../assets/plus.svg'
 import styles from "./Header.module.css"
 
-export function Header() {
+interface IHeaderProps {
+  onAddTodo: (description: string) => void;
+}
+
+export function Header({ onAddTodo }: IHeaderProps) {
   const [newTask, setNewTask] = useState('');
 
   function handleAddNewTask(event: FormEvent) {
     event.preventDefault();
 
-    alert(newTask)
+    onAddTodo(newTask);
+    setNewTask('');
   }
 
   function handleNewTaskChange(event: ChangeEvent<HTMLInputElement>) {
