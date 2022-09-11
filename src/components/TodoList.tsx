@@ -1,3 +1,5 @@
+import { Todo } from './Todo';
+
 import clipboardImg from '../assets/clipboard.svg';
 import styles from "./TodoList.module.css"
 
@@ -25,7 +27,7 @@ export function TodoList({}: ITodoListProps) {
         </div>
       ) : (
         <div className={styles.filledList}>
-          <h2>lets make a list</h2>
+          <Todo />
         </div>
       )}
 
